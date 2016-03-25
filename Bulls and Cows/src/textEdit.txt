@@ -1,0 +1,39 @@
+//Akiva Dollin-acd2164
+
+Game class: The game class has four set of variable to begin with. 
+1- for the scanner input which is the user guess.
+
+2-the new scanner for repeating the game or not
+	This could be done without a separate scanner, 
+	but it makes it more clear if i make a new one.
+	
+3- the variables used to determine when you win, and how many guesses it took you
+
+4- Your best worst and average scores. The bestTry begins at a very high number, 
+because it requires it to begin the loop without throwing off the first round. 
+After the first round, bestTry is redefined and is no longer a ridiculous number. 
+
+The constructor method initializes the scanner input and sets up the rounds up to begin the counter. 
+
+The play method has three nested while loops. 
+The innermost one is used to make sure the user puts in 4 digits. 
+The middle loop is to determine when the game is over, or when their are 4 bulls. 
+The outermost loop is to keep track of when to stop playing and when to increment the counter of rounds. 
+
+There is then a series of if statements regarding the best worst and average cases.
+
+Oracle Class:
+The oracle class is made up of 4 methods. 
+
+1) The constructor simply initializes the instance variable generated number which is found by the randomizer. 
+2)The randomizer method randomly takes 4 unique digits and concatenates them into a string. 
+3) The bulls method checks for whether specific digits are the same,
+and whether they are the same in the same position within the string. 
+This is why charAt is used. 
+4)The cows method is similar, however, when there is a bull, 
+technically it would increment the cows as well. 
+So the if statement is used to show that if the number is similar but not in the right spot, 
+it have no change upon the cows counter; while it is actually adding one and then subtracting one. 
+
+	
+

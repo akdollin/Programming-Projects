@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Palindrome/src/Untitled 3&apos; to &apos;ReadMe&apos;" description="Rename resource &apos;Untitled 3&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Untitled 3" name="ReadMe" stamp="1413090241958" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Palindrome/Untitled 1&apos; to &apos;ProblemSet2ReadMe&apos;" description="Rename resource &apos;Untitled 1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Untitled 1" name="ProblemSet2ReadMe" stamp="1413153733018" updateReferences="true"/>
+</session>

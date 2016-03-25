@@ -1,0 +1,34 @@
+//***************************************
+// This is the ReadMe for the ExpressionTree question.
+//This read me describes how to run the program and a short breakdown of all the methods. 
+//Akiva Dollin-acd2164
+//****************************************
+
+To Run: Simply compile and run. Input a valid postfix expression. 
+The program will output postfix, prefix, infix, and the evaluation. 
+
+
+This program has three classes. 
+
+Main Class:
+The ExpressionTreeTester, is a very basic main class tester. It scans in an expression and then 
+creates an instance of the ExpressionTree class and passes the expression in. 
+
+ExpressionTree Class:
+The constructor takes the postfix expression as an args. It creates an instance of the Stack class with the length of the expression. 
+It calls the createExpressionTree(). This methods adds the characters of the expression to a charArray.
+It then uses that array to creates the correct nodes and fill the Stack. It then calls the methods 
+that check for prefix, infix, and the evaluation. 
+The subclass of the class defines the Tree node. It is a subclass because it is only used by this class. 
+To make the tree, I used the correct procedure. Iterate through the array, if you find an operand, push, and if you see a 
+operator, pop twice, combine (by adding the pop-ed items to a new node) and then re-pushing. 
+Prefix and infix are found in similar ways, both done recursively to iterate through the tree. 
+Prefix prints the operator, then the left and right.
+InFixprints the left, then the operator, and then the right. All surrounded by parentheses. 
+The evaluate method uses only the postfix expression and creates a new Stack to make the pop pop push method simple. 
+Uses a try catch to catch weird problems. 
+
+Stack class: This is a generic stack class. It uses an array to save the data, with a pointer at the bottom.
+It has a push method that puts the data type into the array and a pop method that returns the top of the stack. 
+The isEmpty and isFull methods are there to catch exceptions. 
+

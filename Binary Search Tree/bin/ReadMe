@@ -1,0 +1,20 @@
+//***************************************
+// This is the ReadMe for the 
+//Binary Search Tree problem.
+//Akiva Dollin-acd2164
+//****************************************
+
+To Run: Simply run. To put in your own values, replace the values in the inserts and run. 
+
+This program has two classes.
+Tester: This tester creates an instance of the BinarySearchTree class and uses the insert
+method to fill the tree. It then lazy deletes several of the nodes. It then calls every public method in 
+the BinarySearchTree class to see if they all work after the lazy delete.
+
+BinarySearchTree: The subclass defines what a node is. To account for lazy deletion, the Node is now made up of data, left, right
+and a boolean of whether its been deleted. The methods are all from the template, but changes in simple ways to also account for 
+lazy deleted nodes. The lazy delete method (remove) recursively finds the desired node and changed its boolean to deleted.
+The find min and max methods also look recursively to the left and to the right respectively and account for deleted items. 
+The isEmpty() has a run time of O(1). This is done through an instance variable counter. The counter is incremented every time a node is inserted, and decremented every time a node is lazily deleted or normally removed. The tree is only empty when their are no nodes, or if every node has been lazily deleted, so if the counter is equal to zero, then the tree is empty. The isEmpty() simply checks if the counter is zero and returns. 
+
+

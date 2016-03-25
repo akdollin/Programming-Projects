@@ -1,0 +1,11 @@
+acd2164 - Homework1 - Data Structures
+
+This folder contains three programming questions, each in a separate folder, and a written assignment pdf. 
+The programming folders are 
+
+1)Rectangles: Which includes areaCompare, perimeterCompare, Rectangle, and Problem 1 classes. Including a ReadMe.
+	Problem1 is the main class.
+2)Run Time: Which includes RunTimeLoops, RunTimeTester, and TimeInterval classes. Including a ReadMe.
+	RunTimeTester is the main class. 
+3)RecursiveBinary: Which includes Problem3 as a class, array.txt as a sample list of integers, and a ReadMe. 
+	Problem3 is the main class. Array.txt is the file name. 

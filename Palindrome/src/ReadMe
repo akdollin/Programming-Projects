@@ -1,0 +1,26 @@
+//***************************************
+// This is the ReadMe for the palindrome problem.
+//Akiva Dollin-acd2164
+//****************************************
+
+To Run: This program runs off of the file palindrome.txt. Simply run the program.
+
+This program has three classes.
+
+Stack Class: This is a generic stack class. It uses an array to save the data, with a pointer at the bottom.
+It has a push method that puts the data type into the array and a pop method that returns the top of the stack. 
+The isEmpty and isFull methods are there to catch exceptions. 
+
+PalindromeTester Class: This is the main class. It is very simple. 
+It uses a try catch to catch bad file input and creates an instance of the Palindrome class and passes the file into the Palindrome class.
+
+Palindrome Class: This class uses a scanner to read each line of the file. 
+It then calls the lineCheck() with the line.
+The lineCheck() takes in the String and deletes all special characters, white spaces and changes all capitals to lower case. 
+The palindromeChecker() puts half the finalLine into the stack. If the line is an odd palindrome ex: 
+Racecar, the character one after the remaining letters and the character that is popped are compared. 
+The loop continues throughout the line. For an even palindrome ex: Hannah, the remaining characters and the 
+popped characters are compared. 
+If the line is a palindrome, it prints the original line and then continues with the next line.
+
+	

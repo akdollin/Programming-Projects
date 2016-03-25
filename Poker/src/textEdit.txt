@@ -1,0 +1,37 @@
+The test main method creates a new game, either with command line args or not. 
+
+If there are command line args: the game constructor in the game class initializes a deck, a player, and a card. It then 
+uses an enhanced for loop to check all elements of the new array. Take the string in each box, finds the substring of the suit, parses it as a integer, 
+and saves it as a variable of type int. Then do the same thing to find the value. Then create cards out of the value and suit and then add them to a hand.
+Since its an enhanced for loop, it will make one card at a time, and add them, until all the cards are in the hand. Then sort the hand.
+
+The normal construtor initializes the deck, player, shuffles the deck, and deals a hand. The play() will check to make sure you have enough tokens to play. 
+It then prints your hand and your remaining count of tokens. It then asks you which cards you want to replace. It asks for the indexes. These are inputed as a string.
+After taking the substring to determine which index, it then calls the replace () which requires an index and a card. 
+The index is the parsed substring and the card is the card at that index. It then sorts it again.
+
+It then calls the checkHand(). The check hand method has every hand it order of the hierarchy. To avoid overlap, i added a blank return to break the check after 
+one hand is determined.
+Each hand has a different boolean method to determine whether it exists.
+Each hand also calls an add tokens method which adds a certain amount of tokens to your total.
+
+The player class is pretty simple. It initializes the hand as an arrayList and initializes the starting amount of tokens. 
+It then has many methods regarding counting tokens and effecting the hand. One that takes 1 token per hand.
+ One that adds tokens to the total. One that returns the total tokens.
+ One that uses a simple for loop that clears the hand so as to restart at the beginning of each hand. 
+ One that removes specific cards,and one that prints the hand. 
+ 
+ The deck class initializes a deck with 52 objects of type card. Then defines and initializes the top of the deck. 
+ It uses a method to initialize the deck using a nested for loop, one for the suit and one for the values, defining all 52 cards in the array. 
+ The shuffle method chooses two random cards within the deck, and switches them. It does this 1000 times. And then redefines the top as index 0.
+ The deal() increments top and returns the top card. 
+ 
+ The card class defines the card as having two explicit parameters, a value and a suit. The contructor initializes these.
+ There are then two methods simply for returning the value and suite of a specific card. 
+ The compareTo method compares one card to another and returns either a -1 0 or 1 and then allows us to use Collections.sort(). This
+ is used to sort the hand, which is done after every change. 
+ We see different cards as having letter suits. And through command line args, we put in letters. But we created the deck with numbers for the suits 0-4.
+ So the toString() switches these numbers to letters so we can read and understand which cards are which.
+ 
+ This program does not utilize a joker because it will shuffle after every hand so as to avoid people counting cards. Also, it requires the user to be responsible.
+ When asked to replace cards. There can be no spaces in between the different indexes.  
